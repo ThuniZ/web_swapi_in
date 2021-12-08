@@ -74,11 +74,49 @@ h1 {
     padding: 10px;
     width: 100%;
     height: 60vh;
+    overflow: auto;
+    text-align: justify;
 }
 
+#star-content p{
+    font-size: 20px;
+}
 
 @media screen and (max-width: 800px) {
     .star-cards {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
+
+.star-loader {
+    border: 16px solid blue; /* Light grey */
+    border-top: 16px solid red; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .star-loader-content {
+    border: 16px solid blue; /* Light grey */
+    border-top: 16px solid red; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin-top: 260px;
+    margin-left: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
